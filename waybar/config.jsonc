@@ -1,0 +1,88 @@
+{
+  "layer": "top",
+  "position": "top",
+  "margin-top": 8,
+  "height": 36,
+  "margin-left": 12,
+  "margin-right": 12,
+  "spacing": 4,
+  "modules-left": [
+    "custom/omarchy",
+    "hyprland/workspaces",
+    "hyprland/window"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "cpu", // Added here
+    "network",
+    "pulseaudio",
+    "battery"
+  ],
+"custom/omarchy": {
+    "format": "󰣇",
+    "on-click": "omarchy-menu",
+    "on-click-right": "xdg-terminal-exec",
+    "tooltip-format": "Omarchy Menu\n\nSuper + Alt + Space"
+},
+  "hyprland/workspaces": {
+    "format": "{name}",
+    "active-only": false,
+    "all-outputs": true,
+    "persistent-workspaces": {
+      "*": 5
+    }
+  },
+  "cpu": { // Module definition
+    "interval": 10,
+    "format": " {usage}%",
+    "tooltip": false,
+"on-click": "alacritty --class btop-float -e btop"
+ },
+  "network": {
+    "format-wifi": " {essid}",
+    "format-ethernet": " {ifname}",
+    "format-linked": " {ifname} (No IP)",
+    "format-disconnected": "⚠ Disconnected",
+    "on-click": "omarchy-launch-wifi"
+  },
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": " Muted",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": [
+        "",
+        "",
+        ""
+      ]
+    },
+    "on-click": "pavucontrol"
+  },
+  "clock": {
+    "format": "{:%a %d %b %Y %I:%M %p}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  }
+}
