@@ -1,11 +1,12 @@
-💧 Liquid Gel | Hyprland Dotfiles
+💧 Liquid Gel | Hyprland Dotfiles<img width="1920" height="1080" alt="githubflex" src="https://github.com/user-attachments/assets/dbd4ff24-0545-4dcf-9177-335d5695f993" />
+
 A high-refraction, fluid glass Hyprland configuration. This setup focuses on a "gel-like" aesthetic with heavy use of transparency, blurred backgrounds, and organic, bouncy animations.
 ✨ Key Features
 Refractive Glass Borders: Uses the Liquid Glass Plugin for realistic light bending at window edges.
 Gel-like Animations: Custom Bezier curves for smooth, fluid window transitions.
 Dynamic Transparency: Adaptive opacity based on window focus and type.
 Frosted Waybar: A centered, floating status bar with a glass-morphic finish.
-Unified Theme: Integrated styling for Kitty, Rofi, and Waybar.
+Unified Theme: Integrated styling for Alacritty, Walker, and Waybar.
 🛠️ Installation
 1. Prerequisites
 Ensure you have the following installed:
